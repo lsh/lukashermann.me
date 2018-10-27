@@ -1,7 +1,7 @@
 export default 
-    `varying vec2 vUv;
-    varying vec3 vNormal;
-    vec2 mouse = vec2(0.);
+    `
+    uniform vec2 mouse;
+    uniform vec2 resolution;
     uniform float time;
     #define SPEED .25
     #define PI 3.1415926
@@ -43,7 +43,7 @@ export default
       p = q;
       p.xy *= r(p.z*.12 + mouse.y * .01);
       //float cell = floor(p.y/3.);
-      p.y -= time*.005;
+      p.y -= time*.5;
       p.z += 4.5;
       p.x -= 3.;
       p.xz *= r(PI / 6. + mouse.x * .01);
@@ -64,7 +64,7 @@ export default
     }
     void main()
     {
-      vec2 u = vUv;
+      vec2 u = (2.*gl_FragCoord.xy-resolution.xy)/resolution.y;
       vec3 ro = vec3(0, 0, 0),
            rd = normalize(vec3(u, -1)),
            p = ro-ro,

@@ -20,3 +20,8 @@ html, body {
 a {
   color: #000000;
 }
+
+#canvas {
+  margin-top: 15px;
+  width: 100%;
+}
