@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 
 let scene, camera, renderer;
 
+let geometry, material, mesh;
+
 let uniforms = {
   time: {type: 'f', value: 1.0},
   resolution: {type: 'v2', value: new THREE.Vector2()},
@@ -10,6 +12,9 @@ let uniforms = {
 }
 
 class Shader extends Component {
+  componentWilMount() {
+    console.log(uniforms.time.value);
+  }
 
   componentDidMount(props) {
     const fs = this.props.frag;
@@ -26,9 +31,9 @@ class Shader extends Component {
       });
       document.querySelector('#canvas').appendChild(renderer.domElement);
 
-      const geometry = new THREE.PlaneBufferGeometry(2,2);
+      geometry = new THREE.PlaneBufferGeometry(2,2);
 
-      let material = new THREE.ShaderMaterial({
+      material = new THREE.ShaderMaterial({
         uniforms: uniforms,
         vertexShader:
           `void main()
@@ -38,7 +43,7 @@ class Shader extends Component {
         fragmentShader: fs
       });
 
-      let mesh = new THREE.Mesh(geometry, material);
+      mesh = new THREE.Mesh(geometry, material);
       scene.add(mesh);
 
       onWindowResize();
@@ -58,12 +63,18 @@ class Shader extends Component {
 
     function render() {
       requestAnimationFrame(render);
-      uniforms.time.value += .05;
+      uniforms.time.value += .005;
       renderer.render(scene, camera);
     }
   }
 
-  componentWillMount(props) {
+  componentWillUnmount() {
+    if (scene.children.length >= 0) {
+      scene.remove(mesh);
+      geometry.dispose();
+    }
+    renderer.renderLists.dispose();
+    console.log(uniforms.time.value);
   }
 
   render() {
