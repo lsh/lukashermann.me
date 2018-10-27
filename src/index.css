@@ -10,6 +10,10 @@ html, body {
 
 #nav {
   text-align: center;
+  margin: 0px auto;
+  padding: 5px;
+  width: 60%;
+  border: 1px solid #000000;
 }
 
 #nav a {
