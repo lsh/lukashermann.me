@@ -1,5 +1,5 @@
 export default {
-  id: 3,
+  id: 2,
   name: "Lunar Gala 2018",
   slug: "lunar-gala-2018",
   text:

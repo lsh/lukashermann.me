@@ -54,7 +54,7 @@ function onWindowResize(e){
 
 function renderShader() {
   requestAnimationFrame(renderShader);
-  uniforms.time.value += .005;
+  uniforms.time.value += 0.05;
   renderer.render(scene, camera);
 }
 
@@ -71,7 +71,6 @@ class Shader extends Component {
       geometry.dispose();
     }
     renderer.renderLists.dispose();
-    uniforms.time.value = 0;
   }
 
   render() {

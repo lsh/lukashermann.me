@@ -13,9 +13,9 @@ class Header extends Component {
       <div>
         <div id="nav">
           <NavLink exact to="/" activeStyle={{color: '#ffffff', background: '#000000'}}>LUKAS HERMANN</NavLink>
-          <NavLink exact to="/web" activeStyle={{color: '#ffffff', background: '#000000'}}>WEB</NavLink>
-          <NavLink exact to="/live" activeStyle={{color: '#ffffff', background: '#000000'}}>LIVE</NavLink>
-          <NavLink exact to="/arch" activeStyle={{color: '#ffffff', background: '#000000'}}>ARCHITECTURE</NavLink>
+          <NavLink exact to="/web/" activeStyle={{color: '#ffffff', background: '#000000'}}>WEB</NavLink>
+          <NavLink exact to="/live/" activeStyle={{color: '#ffffff', background: '#000000'}}>LIVE</NavLink>
+          <NavLink exact to="/arch/" activeStyle={{color: '#ffffff', background: '#000000'}}>ARCHITECTURE</NavLink>
         </div>
 
         <div>

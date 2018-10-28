@@ -1,9 +1,10 @@
 export default {
-  id: 2,
-  name: "nEXt-UP Brand & Poster",
-  slug: "next-up",
+  id: 3,
+  name: "Wats:ON? Shift 2017",
+  slug: "watson-2017",
   text:
   `
-    nEXt-UP is Carnegie Mellon University's School of Architecture's yearly event meant to show students what alumni are using their architecture degrees for post graduation. I was asked to create a brand logo and accompanying poster for the event as an extension of CMU SoA's Exchange brand. 
+  Wats:ON? is an arts festival hosted at the Carnegie Mellon University College of Fine Arts.
+  During the 2017 festival I was brought on to do a series of gifs and a projection installation.
   `
 }
