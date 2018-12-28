@@ -16,8 +16,8 @@ p, a {
   text-align: center;
   margin: 0px auto;
   padding: 5px;
-  width: 60%;
-  border: 1px solid #000000;
+  width: 75%;
+  //border: 1px solid #000000;
 }
 
 #nav a {
@@ -33,7 +33,7 @@ h1 {
   margin: 5px 0px;
 }
 
-#canvas {
+#canvas, canvas {
   margin-top: 15px;
   width: 100%;
 }
@@ -46,7 +46,7 @@ li {
   margin: 10px;
   list-style: none;
   padding: 5px 0px;
-  border-bottom: 1px solid #333333;
+  //border-bottom: 1px solid #333333;
 }
 
 #content img {
