@@ -1,7 +1,9 @@
 export default {
   id: 3,
   name: "Hallway",
+  date: 'Spring 2017',
   type: 'shader',
+  thumbnail: 'hfg.png',
   slug: "hallway",
   frag:`
 #define T iTime

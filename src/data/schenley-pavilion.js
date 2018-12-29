@@ -1,7 +1,9 @@
 export default {
   id: 6,
   name: 'Schenley Park Picnic Pavilion',
-  type: 'post',
+  date: 'Spring 2018',
+  type: 'arch',
+  thumbnail: 'schenley-pavilion.png',
   slug: 'schenley-pavilion',
   text:
   `

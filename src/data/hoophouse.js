@@ -1,7 +1,9 @@
 export default {
   id: 9,
   name: 'Roll With It',
-  type: 'post',
+  date: 'Fall 2018',
+  type: 'arch',
+  thumbnail: 'hoop-house.png',
   slug: 'hoop-house',
   text: `
 The second project of the grow collective studio is the hoop

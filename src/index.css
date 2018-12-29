@@ -12,12 +12,32 @@ p, a {
   font-size: 20px;
 }
 
+date {
+  font-size: 18px;
+  color: #555555;
+  font-style: italic;
+}
+
 #nav {
   text-align: center;
   margin: 0px auto;
   padding: 5px;
-  width: 75%;
+  width: 60%;
   //border: 1px solid #000000;
+}
+
+#logo {
+  display: block;
+  background: black;
+  color: white;
+  width: 175px;
+  padding: 5px 15px;
+  margin: 0px auto;
+}
+
+#navlinks {
+  width: 300px;
+  margin: 0px auto;
 }
 
 #nav a {
@@ -31,6 +51,37 @@ a {
 
 h1 {
   margin: 5px 0px;
+}
+
+#filters, #filters a {
+  font-size: 12px;
+  margin: 1px;
+  padding: 5px;
+}
+
+.active-nav {
+  background: black;
+  color: white;
+}
+
+
+.thumbnail {
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  opacity: .5;
+
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.thumbnail:hover {
+  opacity: 1.0;
+}
+
+.thumbnail-title {
+  font-size: 10px;
+  text-align: center;
 }
 
 #canvas, canvas {
@@ -52,4 +103,67 @@ li {
 #content img {
   width: 100%;
   margin: 10px 0px 0px 0px;
+}
+
+#resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
+  width: 65%;
+  margin: 5px;
+  display: block;
+}
+
+.resume-item {
+  width: 75%;
+}
+
+.resume-item-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+}
+
+.resume-item-date {
+  font-size: 12px;
+  color: #555;
+}
+
+.resume-item-desc {
+  font-size: 12px;
+}
+
+#education-info {
+  margin: 5px 0px;
+}
+
+#education-info p {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768) {
+    #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
+      width: 100%;
+    }
+    
+    .resume-item {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    width: 100%;
+  }
+
+  #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
+    width: 100%;
+  }
+
+  .resume-item {
+    width: 100%;
+  }
+
+  #navlinks {
+    width: 100%;
+  }
 }

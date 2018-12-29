@@ -1,7 +1,9 @@
 export default {
   id: 5,
   name: 'Hybrid Media',
-  type: 'post',
+  date: 'Fall 2017',
+  type: 'arch',
+  thumbnail: 'hybrid-media.png',
   slug: 'hybrid-media',
   text:
   `

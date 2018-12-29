@@ -1,7 +1,9 @@
 export default {
   id: 10,
   name: "Sensual Structures",
+  date: 'Fall 2018',
   type: 'shader',
+  thumbnail: "sensual-structures.png",
   slug: "sensual-structures",
   frag:
 `

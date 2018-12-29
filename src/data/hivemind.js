@@ -1,7 +1,9 @@
 export default {
   id: 8,
   name: "Hivemind",
+  date: 'Fall 2017',
   type: 'shader',
+  thumbnail: 'hivemind.png',
   slug: "hivemind",
   frag:`
 	#define r(p, a) {p = cos(a)*p + sin(a) * vec2(p.y, -p.x);}
