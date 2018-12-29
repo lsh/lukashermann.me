@@ -110,7 +110,7 @@ class App extends Component {
     return (
     <div>
       <Header />
-      <Router basename="" hashType="noslash">
+      <Router basename="">
         <Switch>
             <Route exact path="/about" component={About}/>
             <Route exact path="/resume" component={Resume}/>
