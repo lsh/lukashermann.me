@@ -1,6 +1,7 @@
 export default {
   id: 8,
   name: "Hivemind",
+  type: 'shader',
   slug: "hivemind",
   frag:`
 	#define r(p, a) {p = cos(a)*p + sin(a) * vec2(p.y, -p.x);}

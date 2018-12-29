@@ -1,6 +1,7 @@
 export default {
   id: 7,
   name: "Lunar Gala 2018",
+  type: 'post',
   slug: "lunar-gala-2018",
   text:
   `

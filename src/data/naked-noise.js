@@ -1,6 +1,7 @@
 export default {
   id: 1,
   name: "Naked Noise 2017",
+  type: 'post',
   slug: "naked-noise",
   text:
   `Naked Noise is an avante garde noise music festival that occurs in Ithaca, New York as part of Ithaca Underground.

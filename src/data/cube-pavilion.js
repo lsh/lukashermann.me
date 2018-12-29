@@ -1,6 +1,7 @@
 export default {
   id: 0,
   name: 'Cube Pavilion',
+  type: 'post',
   slug: 'cube-pavilion',
   text:
   `

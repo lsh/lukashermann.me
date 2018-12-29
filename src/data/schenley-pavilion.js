@@ -1,6 +1,7 @@
 export default {
   id: 6,
   name: 'Schenley Park Picnic Pavilion',
+  type: 'post',
   slug: 'schenley-pavilion',
   text:
   `

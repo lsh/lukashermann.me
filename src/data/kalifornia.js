@@ -1,6 +1,7 @@
 export default {
   id: 4,
   name: "Kalifornia",
+  type: 'shader',
   slug: "kalifornia",
   frag:`
 #define r(p, a) {p = cos(a)*p + sin(a)*vec2(p.y,-p.x);}

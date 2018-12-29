@@ -1,6 +1,7 @@
 export default {
   id: 5,
   name: 'Hybrid Media',
+  type: 'post',
   slug: 'hybrid-media',
   text:
   `

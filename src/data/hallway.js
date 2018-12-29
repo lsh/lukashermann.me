@@ -1,6 +1,7 @@
 export default {
   id: 3,
   name: "Hallway",
+  type: 'shader',
   slug: "hallway",
   frag:`
 #define T iTime

@@ -1,6 +1,7 @@
 export default {
   id: 10,
   name: "Sensual Structures",
+  type: 'shader',
   slug: "sensual-structures",
   frag:
 `

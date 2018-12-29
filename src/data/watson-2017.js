@@ -1,6 +1,7 @@
 export default {
   id: 2,
   name: "Wats:ON? Shift 2017",
+  type: 'post',
   slug: "watson-2017",
   text:
   `
