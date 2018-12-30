@@ -25,10 +25,14 @@ class Header extends Component {
   }
 }
 
+const thumbnailmargin = {
+  marginTop: '10px',
+};
+
 const postList = posts.map((post) =>
   <li key={post.default.id} class="thumbnail">
       <Link to={post.default.slug}>
-        <img alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
+        <img style={thumbnailmargin} alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
         {/*<div class="thumbnail-title">{post.default.name}</div>*/}
       </Link>
   </li>
@@ -39,7 +43,7 @@ const webglList = posts.map((post) =>
     if (post.default.type === 'shader') {
       return <li key={post.default.id} class="thumbnail">
           <Link to={post.default.slug}>
-            <img alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
+            <img style={thumbnailmargin} alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
             {/*<div class="thumbnail-title">{post.default.name}</div>*/}
           </Link>
       </li>
@@ -52,7 +56,7 @@ const archList = posts.map((post) =>
     if (post.default.type === 'arch') {
       return <li key={post.default.id} class="thumbnail">
           <Link to={post.default.slug}>
-            <img alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
+            <img style={thumbnailmargin} alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
             {/*<div class="thumbnail-title">{post.default.name}</div>*/}
           </Link>
       </li>
@@ -65,7 +69,7 @@ const liveList = posts.map((post) =>
     if (post.default.type === 'post') {
       return <li key={post.default.id} class="thumbnail">
           <Link to={post.default.slug}>
-            <img alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
+            <img style={thumbnailmargin} alt={post.default.name} src={"/thumbnails/"+ post.default.thumbnail} />
             {/*<div class="thumbnail-title">{post.default.name}</div>*/}
           </Link>
       </li>
