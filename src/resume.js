@@ -10,7 +10,7 @@ class Resume extends Component {
         <h2>Lukas Hermann</h2>
         <p>Architectural Design + New Media Art</p>
       </div>
-
+      
       <div id="resume-experience">
 
         <h2>Experience</h2>
@@ -63,7 +63,7 @@ activities</div>
 during the festival</div>
         </div>
       </div>
-
+      <div id="resume-col2">
       <div id="resume-education">
         <h2>Education</h2>
         <div id="education-info">
@@ -112,6 +112,7 @@ the radio</div>
         <div class="resume-item-desc">-Raspberry Pi</div>
         <div class="resume-item-desc">-C/C++</div>
         <div class="resume-item-desc">-C#</div>
+      </div>
       </div>
     );
   }

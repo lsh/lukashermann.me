@@ -1,5 +1,5 @@
 html, body {
-  font-family: sans-serif;
+  font-family: 'Muli', sans-serif;
   color: #333333;
 }
 
@@ -8,8 +8,8 @@ html, body {
   margin: 30px auto;
 }
 
-p, a {
-  font-size: 20px;
+p, a, #content {
+  font-size: 16px;
 }
 
 date {
@@ -36,8 +36,9 @@ date {
 }
 
 #navlinks {
-  width: 300px;
+  width: 100%;
   margin: 0px auto;
+  text-align: center;
 }
 
 #nav a {
@@ -102,7 +103,7 @@ li {
 
 #content img {
   width: 100%;
-  margin: 10px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 
 #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
@@ -140,12 +141,27 @@ li {
   font-weight: bold;
 }
 
+#resume-intro {
+  display: block;
+  margin: 0px;
+}
+
+#resume-experience, #resume-col2 {
+  display: inline-block;
+  width: 45%;
+}
+
 @media only screen and (max-width: 768) {
     #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
       width: 100%;
     }
-    
+
     .resume-item {
+      width: 100%;
+    }
+
+    #resume-experience, #resume-col2 {
+      display: block;
       width: 100%;
     }
 }
@@ -160,10 +176,6 @@ li {
   }
 
   .resume-item {
-    width: 100%;
-  }
-
-  #navlinks {
     width: 100%;
   }
 }
