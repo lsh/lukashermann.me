@@ -3,7 +3,7 @@ import {HashRouter as Router, Route, Link, Switch, NavLink} from "react-router-d
 import Markdown from 'markdown-to-jsx';
 import ShadertoyReact from 'shadertoy-react';
 
-import {TransitionGroup, CSSTransition} from 'react-transition-group';
+import TransitionGroup from 'react-transition-group';
 
 import About from './about.js';
 import Resume from './resume.js'
@@ -49,9 +49,9 @@ const webglList = posts.map((post) =>
             {/*<div class="thumbnail-title">{post.default.name}</div>*/}
           </Link>
       </li>
-    }
     else {
-      return "";
+      return <div></div>;
+    }
     }
   }
 );
@@ -66,9 +66,6 @@ const archList = posts.map((post) =>
           </Link>
       </li>
     }
-    else {
-      return "";
-    }
   }
 );
 
@@ -81,9 +78,6 @@ const liveList = posts.map((post) =>
             {/*<div class="thumbnail-title">{post.default.name}</div>*/}
           </Link>
       </li>
-    }
-    else {
-      return "";
     }
   }
 );
@@ -118,6 +112,7 @@ const filterNav = <div id="filters">
       <NavLink exact to="/arch" activeClassName='active-nav'>Arch</NavLink>
       <NavLink exact to="/live" activeClassName='active-nav'>Live</NavLink>
     </div>;
+
 
 class App extends Component {
   render() {

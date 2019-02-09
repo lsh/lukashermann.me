@@ -26,6 +26,7 @@
     "markdown-to-jsx": "^6.8.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-transition-group": "^2.5.3",
     "shadertoy-react": "^1.0.5",
     "three": "^0.97.0"
   }

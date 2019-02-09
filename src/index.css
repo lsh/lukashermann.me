@@ -3,11 +3,32 @@ html, body {
   color: #333333;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 #content {
   width: 60%;
   margin: 30px auto;
 }
 
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
 p, a, #content {
   font-size: 16px;
 }
