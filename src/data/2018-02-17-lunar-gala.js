@@ -1,6 +1,6 @@
 export default {
   id: 7,
-  name: "Lunar Gala 2018",
+  name: "Lunar Gala Ferox",
   date: 'Spring 2018',
   type: 'post',
   thumbnail: 'lg18.png',

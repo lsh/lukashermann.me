@@ -106,6 +106,10 @@ h1 {
   text-align: center;
 }
 
+.thumbnail-img {
+  margin-top: 10px;
+}
+
 #canvas, canvas {
   margin-top: 15px;
   width: 100%;
@@ -171,9 +175,9 @@ li {
   display: inline-block;
 }
 
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 961) {
     #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
-      width: 100%;
+      width: 80%;
     }
 
     .resume-item {
