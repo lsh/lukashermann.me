@@ -16,6 +16,13 @@ class Resume extends Component {
         <h2>Experience</h2>
 
         <div class="resume-item">
+          <div class="resume-item-title">Interchange Webmaster</div>
+          <div class="resume-item-date">2019 Pittsburgh, PA</div>
+          <div class="resume-item-desc">-Managed student profiles on Interchange website</div>
+          <div class="resume-item-desc">-Updated parts of backend & frontend profile management</div>
+        </div>
+
+        <div class="resume-item">
           <div class="resume-item-title">VR Typography Research Assistance</div>
           <div class="resume-item-date">2018-2019 Pittsburgh, PA</div>
           <div class="resume-item-desc">-Implemented VR web app for a collaboration between the School of Design & School of Architecture</div>
