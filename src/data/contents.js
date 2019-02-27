@@ -11,8 +11,10 @@ import * as LunarGala18 from './lunar-gala-2018.js';
 import * as NEXtUP from './next-up.js';
 import * as Watson17 from './watson-2017.js';
 import * as GrowCenter from './grow-center.js';
+import * as BathHouse from './bathhouse.js'
 
 const posts = [
+  BathHouse,
   GrowCenter,
   NEXtUP,
 	SensualStructures,
