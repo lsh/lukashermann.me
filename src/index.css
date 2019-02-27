@@ -30,7 +30,7 @@ html {
   transition: opacity 1000ms ease-in;
 }
 p, a, #content {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 date {
@@ -134,22 +134,22 @@ li {
 }
 
 .resume-item {
-  width: 75%;
+  width: 100%;
 }
 
 .resume-item-title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px 0px 0px 0px;
 }
 
 .resume-item-date {
-  font-size: 12px;
+  font-size: 16px;
   color: #555;
 }
 
 .resume-item-desc {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 #education-info {
@@ -169,7 +169,6 @@ li {
 
 #resume-experience, #resume-col2 {
   display: inline-block;
-  width: 45%;
 }
 
 @media only screen and (max-width: 768) {
