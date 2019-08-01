@@ -6,7 +6,7 @@ import ShadertoyReact from 'shadertoy-react';
 //import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
 import About from './about.js';
-import Resume from './resume.js'
+//import Resume from './resume.js'
 
 class Header extends Component {
   render() {
@@ -17,7 +17,7 @@ class Header extends Component {
           <NavLink exact to="/"><div id="logo">LUKAS HERMANN</div></NavLink>
           <div id="navlinks">
             <NavLink exact to="/about">ABOUT</NavLink>
-            <NavLink exact to="/resume">RESUME</NavLink>
+            <a href="https://drive.google.com/file/d/1zqrmCUgZdygxt7pYpDnGVlXU14sB7j4Z/view?usp=sharing">RESUME</a>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ class App extends Component {
       <Router basename="">
         <Switch>
             <Route exact path="/about" component={About}/>
-            <Route exact path="/resume" component={Resume}/>
+            {/*<Route exact path="/resume" component={Resume}/>*/}
             {pr}
 
             <Route exact path="/" render={() => {
