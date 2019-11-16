@@ -90,9 +90,10 @@ h1 {
 
 .thumbnail {
   display: inline-block;
-  width: 150px;
-  height: 100px;
+  width: 15%;
   opacity: .5;
+  margin: 0px;
+  padding: 5px;
 
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -105,10 +106,6 @@ h1 {
 .thumbnail-title {
   font-size: 10px;
   text-align: center;
-}
-
-.thumbnail-img {
-  margin-top: 10px;
 }
 
 #canvas, canvas {
@@ -176,18 +173,15 @@ li {
   display: inline-block;
 }
 
-@media only screen and (max-width: 961) {
-    #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
-      width: 80%;
+@media only screen and (max-width: 1024px) {
+    .thumbnail {
+	width: 20%
     }
+}
 
-    .resume-item {
-      width: 100%;
-    }
-
-    #resume-experience, #resume-col2 {
-      display: block;
-      width: 100%;
+@media only screen and (max-width: 768px) {
+    .thumbnail {
+	width: 30%
     }
 }
 
@@ -197,11 +191,7 @@ li {
 
   }
 
-  #resume-experience, #resume-education, #resume-extracurricular, #resume-skills {
-    width: 100%;
-  }
-
-  .resume-item {
-    width: 100%;
+  .thumbnail {
+      width: 30%;
   }
 }
