@@ -2,7 +2,7 @@ export default {
   id: 2,
   name: "Wats:ON? Shift 2017",
   date: 'Fall 2017',
-  type: 'post',
+  type: 'live',
   thumbnail: 'watson17.png',
   slug: "watson-2017",
   text:

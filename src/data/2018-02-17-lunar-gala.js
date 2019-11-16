@@ -2,7 +2,7 @@ export default {
   id: 7,
   name: "Lunar Gala Ferox",
   date: 'Spring 2018',
-  type: 'post',
+  type: 'live',
   thumbnail: 'lg18.png',
   slug: "lunar-gala-2018",
   text:

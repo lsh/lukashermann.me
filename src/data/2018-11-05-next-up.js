@@ -2,7 +2,7 @@ export default {
   id: 11,
   name: "nEXt-UP Brand & Poster",
   date: 'Fall 2018',
-  type: 'post',
+  type: 'live',
   thumbnail: "next-up.png",
   slug: "next-up",
   text:

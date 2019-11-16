@@ -2,7 +2,7 @@ export default {
   id: 1,
   name: "Naked Noise 2017",
   date: 'Spring 2017',
-  type: 'post',
+  type: 'live',
   thumbnail: "naked-noise.png",
   slug: "naked-noise",
   text:

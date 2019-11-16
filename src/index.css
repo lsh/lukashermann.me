@@ -79,6 +79,7 @@ h1 {
   font-size: 12px;
   margin: 1px;
   padding: 5px;
+  display: inline;
 }
 
 .active-nav {
