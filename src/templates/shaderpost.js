@@ -22,14 +22,13 @@ const MainObject = (props) => {
 }
 
 export default ({ data }) => {
-    const aspect = window.innerHeight / window.innerWidth;
     const w = 800;
     const h = 620;
     const post = data.markdownRemark;
     return(
         <div>
             <Canvas style={{width: `${w}px`, height: `${h}px`, background: "#000000"}}
-                camera={{position: [0, 0, 1], aspect: aspect, viwport: [w, h]}}
+                camera={{position: [0, 0, 1], viwport: [w, h]}}
                 gl2={true}
                 >
                     <MainObject width={w} height={h} shader={post.rawMarkdownBody} />
