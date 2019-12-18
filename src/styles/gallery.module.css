@@ -1,0 +1,55 @@
+.portfolioItem {
+    width: 20%;
+    display: inline-block;
+    margin: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.portfolioItem:hover, .filterItem:hover {
+    cursor: pointer;
+}
+
+.filters {
+    margin: 10px 0px;
+}
+
+.filterItem {
+    border-bottom: 1px solid #555555;
+}
+
+.filterItem, .filterItemNoLink {
+    display: inline;
+    margin: 0px 5px 0px 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .portfolioItem {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .portfolioItem {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolioItem {
+        width: 40%;
+    }
+
+    .filters {
+        margin: 20px 0px;
+    }
+
+    .filterItem, .filterItemNoLink {
+        font-size: 16px;
+    }
+
+    .filterItemNoLink {
+        margin-left: 0px;
+    }
+}

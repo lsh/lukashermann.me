@@ -1,0 +1,77 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #3766ff;
+}
+
+p {
+    color: #555555;
+}
+
+img {
+    width: 100%;
+    margin: 10px 0px;
+    transition: all 1s;
+}
+
+.thumbnail {
+    transform: scale(0.4);
+    transition: all 0.5s;
+    animation: growth 1s ease-in-out;
+    -webkit-animation: growth 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+@keyframes growth {
+    from {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+}
+
+@-webkit-keyframes growth {
+    from {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide {
+    from {opacity: 0; transform: translate3d(0px 0px 0px);}
+    to {opacity: 0; transform: translate3d(-100px 0px 0px);}
+}
+
+@-webkit-keyframes slide {
+    from {opacity: 0; transform: translate3d(0px 0px 0px);}
+    to {opacity: 0; transform: translate3d(-100px 0px 0px);}
+}
