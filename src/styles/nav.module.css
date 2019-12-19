@@ -34,7 +34,7 @@
     .nav {
         display: block;
         width: 80%;
-        margin: 20px 0px;
+        margin: 20px auto;
         position: relative;
         text-align: center;
     }
