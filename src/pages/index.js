@@ -11,7 +11,7 @@ export default ({ data }) => {
     const [newNodes, setNewNodes] = useState(allNodes); 
     useEffect(()=> {
       setNodes(newNodes);
-    });
+    }, [newNodes]);
 
     return (
         <div>
