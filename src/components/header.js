@@ -9,7 +9,7 @@ export default () => (
         </Link>
         <nav className={Style.navBox}>
             <Link to="/about" className={Style.navLink}>About</Link>
-            <a rel="noopener noreferrer" target="_blank" className={Style.navLink} href="https://drive.google.com/file/d/1zqrmCUgZdygxt7pYpDnGVlXU14sB7j4Z/view">Resume</a>
+            <a rel="noopener noreferrer" target="_blank" className={Style.navLink} href="https://drive.google.com/file/d/1sZP7BUPbPppp5ETlKa6YT9KqKlezUIVk/view">Resume</a>
         </nav>
     </div>
 );
