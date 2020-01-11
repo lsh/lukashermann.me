@@ -4,6 +4,7 @@ import Style from '../styles/about.module.css'
 export default function About() {
     return(
         <div className={Style.about}>
+	    <img src="/portrait.png" alt="portrait" />
             <h1>About</h1>
             <p>I am an designer and developer currently studying architecture at Carnegie Mellon University.
             I have experience working with physical installation art, live performance, web design, graphic design, animation & WebGL.
