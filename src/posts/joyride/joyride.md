@@ -1,5 +1,5 @@
 ---
-![gif asset](score_small.gif)name: 'Nike Joyride'
+name: 'Nike Joyride'
 type: 'live'
 slug: 'joyride'
 date: '2019-08-22'
