@@ -3,7 +3,7 @@ name: 'Naked Noise 2017'
 type: 'live'
 slug: 'nakednoise'
 date: '2017-04-01'
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 ---
 
 Naked Noise is an avante garde noise music festival that occurs in Ithaca, New York as part of Ithaca Underground.

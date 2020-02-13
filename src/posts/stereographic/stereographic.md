@@ -2,7 +2,7 @@
 name: "Stereographic"
 date: '2019-01-04'
 type: 'shader'
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 slug: "stereographic"
 ---
 

@@ -2,7 +2,7 @@
 name: "Kalifornia"
 date: "2018-03-11"
 type: 'shader'
-thumbnail: "thumbnail.png"
+thumbnail: "thumbnail.jpg"
 slug: "kalifornia"
 ---
 uniform vec2 resolution;

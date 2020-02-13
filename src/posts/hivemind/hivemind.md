@@ -3,7 +3,7 @@ name: "Hivemind"
 date: '2018-10-31'
 type: 'shader'
 slug: "hivemind"
-thumbnail: thumbnail.png 
+thumbnail: thumbnail.jpg 
 ---
 	#define r(p, a) {p = cos(a)*p + sin(a) * vec2(p.y, -p.x);}
 	uniform vec2 resolution;

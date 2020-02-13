@@ -2,7 +2,7 @@
 name: "Sensual Structures"
 date: '2018-12-13'
 type: 'shader'
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 slug: "sensual-structures"
 ---
 

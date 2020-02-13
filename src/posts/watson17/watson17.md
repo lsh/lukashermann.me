@@ -3,7 +3,7 @@ name: 'WatsON? Shift'
 type: 'live'
 slug: 'watson17'
 date: '2017-11-03'
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 ---
 
 Wats:ON? is an arts festival hosted at the Carnegie Mellon University College of Fine Arts.

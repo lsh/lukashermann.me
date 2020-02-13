@@ -2,7 +2,7 @@
   name: "Hallway"
   date: '2018-02-01'
   type: 'shader'
-  thumbnail: thumbnail.png
+  thumbnail: thumbnail.jpg
   slug: "hallway"
 ---
 uniform vec2 resolution;

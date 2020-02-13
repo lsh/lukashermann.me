@@ -3,7 +3,7 @@ name: 'Roll With It'
 type: 'arch'
 slug: 'hoophouse'
 date: '2018-10-29'
-thumbnail: thumbnail.png 
+thumbnail: thumbnail.jpg 
 ---
 
 The second project of the grow collective studio is the hoop

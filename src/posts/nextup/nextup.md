@@ -2,7 +2,7 @@
 name: 'nEXt-UP Brand & Poster'
 type: 'arch'
 slug: 'nextup'
-thumbnail: thumbnail.png
+thumbnail: thumbnail.jpg
 date: '2018-11-05'
 ---
 
