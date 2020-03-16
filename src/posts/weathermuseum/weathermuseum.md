@@ -9,7 +9,7 @@ Carnegie Mellon University's School of Architecture's third year Environmental F
 My project focused on the process of erosion and flooding. Using a form derived from these concepts, I created a museum that allows space for researchers and passerby boats to dock.
 
 ![plan](plan.jpg)
-![elevation](sectionjpg.)
+![section](section.jpg)
 ![Axon Section](axosection.jpg)
 ![Exterior Render](renderview_side.jpg)
 ![Form gif](form.gif)
