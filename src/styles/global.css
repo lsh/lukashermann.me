@@ -1,17 +1,15 @@
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif TC', serif;
 }
 
-h1 {
-    font-family: 'Merriweather', serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
 }
 
 a {
-    text-decoration: none;
     color: black;
-    border-bottom: 1px solid #3766ff;
 }
 
 p {

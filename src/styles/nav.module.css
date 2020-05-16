@@ -1,46 +1,59 @@
 .nav {
-    position: fixed;
-    width: 70px;
-    top: 30px;
-    left: 30px;
-}
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto 0 auto;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+} 
 
 .logobox {
-    width: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     padding: 10px 5px;
-    font-size: 20px;
-    margin-top: 0px;
-    border: 1px solid black;
+    font-size: 30px;
+    margin: auto 0 0 0;
+}
+
+.logolink {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .navBox {
-    width: 70px;
-    padding: 10px 10px 10px 0px;
-    border: 1px solid black;
+    display: flex;
     font-size: 16px;
     font-weight: 700;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .navLink {
-    display: block;
-    margin: 5px;
+    margin: 10px 10px 0 10px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        margin: 10px auto 0 auto;
+        padding-bottom: 30px;
+    }
+
     .logobox {
         width: 80%;
     }
-    
-    .nav {
-        display: block;
-        width: 80%;
-        margin: 20px auto;
-        position: relative;
-        text-align: center;
-    }
+}
 
-    .navBox {
-        width: 80%;
-        border: none;
+@media only screen and (max-width: 1024px) {
+    .nav {
+        width: 90%;
+        margin: 40px auto;
     }
 }
