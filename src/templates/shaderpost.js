@@ -1,37 +1,43 @@
-import React, { useRef} from 'react'; 
+import React, { useRef } from 'react'; 
 import { graphql } from 'gatsby';
-import { useRender, Canvas } from 'react-three-fiber';
+import { useFrame, Canvas, useThree } from 'react-three-fiber';
+import { useWindowDimensions } from '../util';
+import Style from '../styles/shader.module.css';
 
 const MainObject = (props) => {
     const ref = useRef();
-    useRender(() => ref.current.material.uniforms.time.value += 0.05);
+    const { size } = useThree();
+    const resize = useWindowDimensions();
+
+    useFrame(() => {
+        ref.current.material.uniforms.time.value += 0.05
+        ref.current.material.uniforms.resolution.value = [size.width, size.height]
+    });
+
     return (
             <mesh visible
+                   key={resize}
                    ref={ref}>
                 <planeBufferGeometry attach="geometry" args={[2,2]} />
                 <shaderMaterial
                     attach="material"
                     fragmentShader={props.shader}
                     uniforms={{
-                        resolution: {type: "v2", value: [props.width, props.height]},
+                        resolution: {type: "v2", value: [size.width, size.height]},
                         time: {type: "f", value: 0},
-                    }}
-                />
+                    }} />
             </mesh>
     );
 }
 
 export default ({ data }) => {
-    const w = 800;
-    const h = 620;
     const post = data.markdownRemark;
     return(
-        <div>
-            <Canvas style={{width: `${w}px`, height: `${h}px`, background: "#000000"}}
-                camera={{position: [0, 0, 1], viwport: [w, h]}}
-                gl2={true}
-                >
-                    <MainObject width={w} height={h} shader={post.rawMarkdownBody} />
+        <div className={Style.canvasContainer}>
+            <Canvas className={Style.canvas}
+                    camera={{position: [0, 0, 1]}}
+                    gl2={true} >
+                    <MainObject shader={post.rawMarkdownBody} />
             </Canvas>
         </div>
     );
