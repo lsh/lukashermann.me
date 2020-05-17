@@ -14,3 +14,18 @@ export const useWindowDimensions = () => {
 
     return windowDimensions;
 }
+
+export const useScrollPosition = () => {
+    const [scrollPosition, setScrollPosition] = useState([0, 0])
+    
+    useLayoutEffect(() => {
+        function updateScrollPos() {
+            setScrollPosition([window.scrollX, window.scrollY]);
+        }
+        window.addEventListener('scroll', updateScrollPos);
+        updateScrollPos();
+        return () => window.removeEventListener('scroll', updateScrollPos);
+    }, []);
+
+    return scrollPosition;
+}

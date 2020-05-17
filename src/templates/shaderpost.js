@@ -1,13 +1,14 @@
 import React, { useRef } from 'react'; 
 import { graphql } from 'gatsby';
 import { useFrame, Canvas, useThree } from 'react-three-fiber';
-import { useWindowDimensions } from '../util';
+import { useWindowDimensions, useScrollPosition } from '../util';
 import Style from '../styles/shader.module.css';
 
 const MainObject = (props) => {
     const ref = useRef();
     const { size } = useThree();
     const resize = useWindowDimensions();
+    const scroll = useScrollPosition();
 
     useFrame(() => {
         ref.current.material.uniforms.time.value += 0.05
@@ -16,7 +17,7 @@ const MainObject = (props) => {
 
     return (
             <mesh visible
-                   key={resize}
+                   key={[resize, scroll]}
                    ref={ref}>
                 <planeBufferGeometry attach="geometry" args={[2,2]} />
                 <shaderMaterial

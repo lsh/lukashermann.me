@@ -9,3 +9,13 @@
     align-self: center;
     width: 400px;
 }
+
+@media only screen and (max-width: 640px) {
+    .about {
+        flex: 0 0 90%;
+    }
+
+    .portrait {
+        width: 90%;
+    }
+}
