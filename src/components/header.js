@@ -5,6 +5,7 @@ import Style from '../styles/nav.module.css';
 export default () => (
     <div className={Style.nav}>
         <Link to="/" className={Style.logolink}>
+            <img className={Style.logo} alt="logo" src="/logo.svg" />
             <h1 className={Style.logobox}>Lukas Hermann</h1>
         </Link>
         <nav className={Style.navBox}>
