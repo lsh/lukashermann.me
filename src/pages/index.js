@@ -4,14 +4,15 @@ import Style from '../styles/gallery.module.css';
 
 export default ({ data }) => {
     const allNodes = data.allMarkdownRemark.edges;
-    const shaderNodes = allNodes.filter(obj => obj.node.frontmatter.type === 'shader');
+    const webNodes = allNodes.filter(obj => obj.node.frontmatter.type === 'shader'
+                                         || obj.node.frontmatter.type === 'web');
     const liveNodes = allNodes.filter(obj => obj.node.frontmatter.type === 'live');
     const archNodes = allNodes.filter(obj => obj.node.frontmatter.type === 'arch');
 
     const nodes = [
-      { title: 'Architecture', desc: 'A collection of projects done in Carnegie Mellon’s School of Architecture', nodes: archNodes },
+      { title: 'Web', desc: 'Shaders, WebGL, and everything deployed on the web', nodes: webNodes },
       { title: 'Live', desc: 'Installations, live performances, and all other physical work', nodes: liveNodes },
-      { title: 'Web', desc: 'Shaders, WebGL, and everything deployed on the web', nodes: shaderNodes },
+      { title: 'Architecture', desc: 'A collection of projects done in Carnegie Mellon’s School of Architecture', nodes: archNodes },
     ]
 
     return (
