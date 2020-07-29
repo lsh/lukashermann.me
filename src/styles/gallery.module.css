@@ -1,50 +1,76 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex: 0 0 100%;
+    overflow-y: hidden;
+}
+
+.clickInteractor {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.scrollLabel {
+    font-size: 16px;
+    color: #888;
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    left: 0;
+    transform: translate(calc(100vw - 100% - 20px), -20px);
+}
+
 .section {
     display: flex;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    animation: slideLeft 1s ease-in-out;
-}
-
-.section:nth-child(even) {
-    flex-direction: row-reverse;
-    animation: slideRight 1s ease-in-out;
-}
-
-.section:nth-child(even) .thumbnails {
-    justify-content: flex-end;
-}
-
-.section h2, .section p {
-    align-content: center;
+    flex: 0 0 100%;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section h1 {
+    font-size: 105px;
+    margin-bottom: 0;
 }
 
 .section h2 {
-    text-align: center;
-    font-size: 35px;
+    font-size: 75px;
     margin-bottom: 10px;
 }
 
 .section p {
     font-size: 18px;
-    margin: 0 auto;
-    width: 75%;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: flex-start;
 }
 
 .description {
+    margin-left: 5px;
+    width: 40vw;
+    align-self: flex-end;
+}
+
+.thumbnailContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-end;
     flex: 0 0 50%;
+    justify-content: center;
 }
 
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 55%;
+    flex: 0 0 100%;
+    align-self: flex-start;
+    width: 40vw;
+    justify-content: space-between;
 }
 
 .thumbnail {
@@ -58,7 +84,7 @@
 }
 
 .portfolioItem {
-    width: 125px;
+    width: 150px;
     display: inline-block;
     margin: 5px;
     border: none;
@@ -70,74 +96,103 @@
     cursor: pointer;
 }
 
-/* KEYFRAMES */
-@keyframes slideLeft {
-    0% {transform: translate3d(-500px, 0, 0); opacity: 0;}
-    100% {transform: translate3d(0, 0, 0); opacity: 1;}
-}
-
-@keyframes slideRight {
-    0% {transform: translate3d(500px, 0, 0); opacity: 0;}
-    100% {transform: translate3d(0, 0, 0); opacity: 1;}
-}
-
-@keyframes fade {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1024px) {
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .scrollLabel {
+        display: none;
+    }
+
+    .main {
+        display: block;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+
     .section {
-        flex-direction: column;
+        height: auto;
+        margin: 20px 0px;
     }
 
-    .section:nth-child(even) {
-        flex-direction: column;
+    .description {
+        width: 60vw;
     }
 
-    .section:nth-child(even) .thumbnails {
-        justify-content: flex-start;
-    }
-
-    .section:first-child {
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    .section p {
-        width: 50%;
+    .thumbnailContainer {
+        width: 60%;
     }
 
     .thumbnails {
-        margin-top: 10px;
-    }
-
-    .portfolioItem {
-        width: 175px;
+        display: block;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 801px) {
+
+    .scrollLabel {
+        display: none;
+    }
+
+    .main {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: visible;
+        width: 100vw;
+        margin: 10px auto;
+    }
+
+    :global(html, body) {
+        overflow-y: scroll;
+    }
+
     .section {
-        animation: fade 1s ease-in-out;
+        width: 90vw;
+        height: auto;
+        display: block;
+        margin: 10px auto;
     }
 
-    .section:nth-child(even) .thumbnails {
-        animation: fade 1s ease-in-out;
-        justify-content: center;
+    .description h1 {
+        margin-top: 20px;
+        font-size: 60px;
     }
 
-    .portfolioItem {
-        width: 125px;
-    }
-
-    .thumbnails {
-        justify-content: center;
+    .section h2 {
+        font-size: 40px;
+        margin-top: 20px;
     }
 
     .section p {
-        width: 80%;
+        width: 100%;
+    }
+
+    .descriptionContainer {
+        justify-self: flex-start;
+        align-self: flex-start;
+    }
+
+    .description {
+        width: 80vw;
+    }
+
+    .thumbnailContainer {
+        justify-self: flex-start;
+        align-self: flex-start;
+        width: 100%;
+    }
+    
+    .thumbnails {
+        display: block;
+    }
+
+    .portfolioItem {
+        width: 45%;
     }
 }

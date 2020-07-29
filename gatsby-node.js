@@ -18,9 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const postFormat = node.frontmatter.type === 'shader' ?
-                        './src/templates/shaderpost.js':
-                        './src/templates/textpost.js'; 
+    const postFormat = './src/templates/textpost.js'; 
 
     createPage({
       path: `/${node.frontmatter.slug}`,
