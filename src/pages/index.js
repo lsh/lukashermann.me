@@ -42,7 +42,7 @@ export default ({ data, location }) => {
     return (
       <div>
         <div className={Style.main}>
-          <div className={Style.section} ref={refs[0]}>
+          <div className={Style.section} ref={refs[0]} role="container" onClick={function(e) {if (e.target === e.currentTarget) setSection((currentSection+1) % (nodes.length + 1))}}>
               <div className={Style.descriptionContainer}>
                 <div className={Style.description}>
                   <h1>Hey,<br/>I'm Lukas</h1>
@@ -54,7 +54,8 @@ export default ({ data, location }) => {
               </div>
           </div>
           {nodes.map((n, i) => (
-            <div key={n.title} className={Style.section} ref={refs[i+1]}>
+            <div key={n.title}
+              className={Style.section} ref={refs[i+1]} onClick={function(e) {if (e.target === e.currentTarget) setSection((currentSection+1) % (nodes.length + 1))}}>
               <div className={Style.descriptionContainer}>
                 <div className={Style.description}>
                   <h2>{n.title}</h2>
