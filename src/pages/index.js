@@ -32,10 +32,14 @@ export default ({ data, location }) => {
       }
 
       document.addEventListener('keydown', handleKey, false)
-      refs[currentSection].current.scrollIntoView({behavior: "smooth"});
+      if (refs[currentSection] && refs[currentSection].current) {
+        refs[currentSection].current.scrollIntoView({behavior: "smooth"});
+      }
       return () => {
         document.removeEventListener('keydown', handleKey, false)
-        refs[currentSection].current.scrollIntoView({behavior: "smooth"});
+        if (refs[currentSection] && refs[currentSection].current) {
+          refs[currentSection].current.scrollIntoView({behavior: "smooth"});
+        }
       }
     })
 
