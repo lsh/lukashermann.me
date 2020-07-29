@@ -3,8 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Style from '../styles/post.module.css'
 
 export default ({ data, location }) => {
-    const { state = {} } = location;
-    const { prevsection } = state;
+    const prevsection = location && location.state && location.state.prevsection ? location.state.prevsection : 0;
 
     const post = data.markdownRemark;
     return (
